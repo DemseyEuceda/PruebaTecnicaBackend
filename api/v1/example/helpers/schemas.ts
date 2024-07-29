@@ -8,6 +8,6 @@ export const validateLoginSchema = z.object({
 export const validateDataCotizacion = z.object({
   edad : z.number().int().refine(edad => edad >= 18 && edad <= 66),
   sumaAsegurada : z.number(),
-  sexo : z.string().regex(/^[MFmf]$/),
+  sexo : z.string().regex(/^[MF]$/),
   fumador : z.boolean()
 })
