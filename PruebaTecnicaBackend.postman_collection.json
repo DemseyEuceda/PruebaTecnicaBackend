@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "1e415427-f8d3-43cd-8a57-8b6a56513ca7",
+		"name": "PruebaTecnicaBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21803401"
+	},
+	"item": [
+		{
+			"name": "Cotizacion de seguros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"edad\": 25,\r\n\"sumaAsegurada\": 256000.00,\r\n\"sexo\": \"M\", \r\n\"fumador\" : true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/cotizacion",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cotizacion"
+					]
+				},
+				"description": "Este enpoint hace una cotizacón de dos aseguradoras y lanza los resultados de cada una permitiendo así hacer una comparación sobre la prima de cada uno de ellos"
+			},
+			"response": []
+		}
+	]
+}

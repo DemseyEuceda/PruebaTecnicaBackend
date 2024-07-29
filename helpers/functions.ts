@@ -95,7 +95,7 @@ export function cotizacionVidainsure(edad : number, sumaAsegurada : number, sexo
   const personas = loadData(filepath);
   const personaBuscada = personas.find(item => item.Edad = edad);
   let primaAnual : number = 0;
-  console.log(personaBuscada)
+  //console.log(personaBuscada)
   if(typeof personaBuscada !='undefined'){
     if(fumador && sexo == "M")
       primaAnual = (personaBuscada.hombreFumador/1000)*sumaAsegurada;
